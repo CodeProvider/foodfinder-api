@@ -20,8 +20,7 @@ class ContimentTableViewController: UITableViewController, UITableViewDataSource
 
     @IBAction func SearchButton(sender: AnyObject) {
         
-        var Output:NSString = "SearchButton"
-        NSLog("LOG: Search Button pressed",Output)
+        NSLog("LOG: Search Button pressed")
     }
     override func viewDidAppear(animated: Bool) {
         var userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
