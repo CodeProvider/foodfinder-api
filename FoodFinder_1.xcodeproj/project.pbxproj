@@ -10,6 +10,7 @@
 		351E88F71A6A9E2400BC149B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351E88F61A6A9E2400BC149B /* DetailViewController.swift */; };
 		351E88F91A6AA90100BC149B /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351E88F81A6AA90100BC149B /* FavouritesViewController.swift */; };
 		351E88FB1A6AA93900BC149B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351E88FA1A6AA93900BC149B /* MenuViewController.swift */; };
+		351E88FD1A6AB1CF00BC149B /* Formula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351E88FC1A6AB1CF00BC149B /* Formula.swift */; };
 		35C082521A69827400935604 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C082511A69827400935604 /* AppDelegate.swift */; };
 		35C082541A69827400935604 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C082531A69827400935604 /* ViewController.swift */; };
 		35C082571A69827400935604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C082551A69827400935604 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		351E88F61A6A9E2400BC149B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		351E88F81A6AA90100BC149B /* FavouritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		351E88FA1A6AA93900BC149B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		351E88FC1A6AB1CF00BC149B /* Formula.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formula.swift; sourceTree = "<group>"; };
 		35C0824C1A69827400935604 /* FoodFinder_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodFinder_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C082501A69827400935604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35C082511A69827400935604 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				35C082531A69827400935604 /* ViewController.swift */,
 				351E88F61A6A9E2400BC149B /* DetailViewController.swift */,
 				351E88FA1A6AA93900BC149B /* MenuViewController.swift */,
+				351E88FC1A6AB1CF00BC149B /* Formula.swift */,
 				351E88F81A6AA90100BC149B /* FavouritesViewController.swift */,
 				35C082551A69827400935604 /* Main.storyboard */,
 				35C082711A69841000935604 /* ContimentTableViewController.swift */,
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35C082721A69841000935604 /* ContimentTableViewController.swift in Sources */,
+				351E88FD1A6AB1CF00BC149B /* Formula.swift in Sources */,
 				351E88FB1A6AA93900BC149B /* MenuViewController.swift in Sources */,
 				35C082541A69827400935604 /* ViewController.swift in Sources */,
 				35C082521A69827400935604 /* AppDelegate.swift in Sources */,
