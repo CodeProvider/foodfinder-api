@@ -15,6 +15,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBOutlet var ItemLablel: UILabel!
     @IBOutlet var ItemUIPickerView: UIPickerView!
+    var Laimer = 0
     
     var CondimentList = ["Salz", "Pfeffer", "Öl", "Tomaten", "Knoblauch", "Zwiebeln", "Nudeln", "Basilikum"]
     
