@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ContimentTableViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
 
     var CondimentList:NSMutableArray = NSMutableArray()
@@ -17,6 +18,11 @@ class ContimentTableViewController: UITableViewController, UITableViewDataSource
         
     }
 
+    @IBAction func SearchButton(sender: AnyObject) {
+        
+        var Output:NSString = "SearchButton"
+        NSLog("LOG: Search Button pressed",Output)
+    }
     override func viewDidAppear(animated: Bool) {
         var userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         
@@ -131,6 +137,8 @@ class ContimentTableViewController: UITableViewController, UITableViewDataSource
         
         
     }
+    
+    
     
 
 }

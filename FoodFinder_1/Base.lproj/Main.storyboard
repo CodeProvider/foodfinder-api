@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Detail View Controller-->
+        <!--DetailView-->
         <scene sceneID="aoF-2P-eRa">
             <objects>
                 <viewController id="Lbr-Tq-Y3E" customClass="DetailViewController" customModule="FoodFinder_1" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,7 +25,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JYf-i2-jWk"/>
+                    <navigationItem key="navigationItem" title="DetailView" id="JYf-i2-jWk"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -34,9 +34,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moM-cM-raC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2146.5" y="289.5"/>
+            <point key="canvasLocation" x="1866.5" y="289.5"/>
         </scene>
-        <!--Contiment Table View Controller-->
+        <!--CondimentList-->
         <scene sceneID="GFL-GH-2q6">
             <objects>
                 <tableViewController id="QyY-Jw-jzN" customClass="ContimentTableViewController" customModule="FoodFinder_1" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,6 +44,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CbG-Sr-UoQ">
+                            <rect key="frame" x="-23" y="-15" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                            <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Search"/>
+                            <connections>
+                                <action selector="SearchButton:" destination="QyY-Jw-jzN" eventType="touchUpInside" id="V5x-lG-y3j"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="7" reuseIdentifier="Cell" rowHeight="37" id="c1g-CW-CS5">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -60,7 +71,7 @@
                             <outlet property="delegate" destination="QyY-Jw-jzN" id="OVZ-rg-qcW"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="rc3-Vf-xSk">
+                    <navigationItem key="navigationItem" title="CondimentList" id="rc3-Vf-xSk">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="f3v-fs-4M8">
                             <connections>
                                 <segue destination="vXZ-lx-hvc" kind="push" id="oUN-iA-vjh"/>
@@ -72,9 +83,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Srz-6H-02d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703.5" y="289.5"/>
+            <point key="canvasLocation" x="1379.5" y="287.5"/>
         </scene>
-        <!--View Controller-->
+        <!--ChooseItem-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FoodFinder_1" customModuleProvider="target" sceneMemberID="viewController">
@@ -104,7 +115,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="nKP-Qh-wQd">
+                    <navigationItem key="navigationItem" title="ChooseItem" id="nKP-Qh-wQd">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="7rV-DH-5rY">
                             <connections>
                                 <action selector="SaveItemForCondimentListButton:" destination="vXZ-lx-hvc" id="4oD-Oh-8jB"/>
@@ -120,7 +131,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2316.5" y="1104.5"/>
+            <point key="canvasLocation" x="1872.5" y="1096.5"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="Ss9-ag-pEM">
+            <objects>
+                <viewController id="pI3-5g-HWx" customClass="MenuViewController" customModule="FoodFinder_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xer-Xu-HdM"/>
+                        <viewControllerLayoutGuide type="bottom" id="fMd-YM-npm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Fm-EN-iqq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Menu" id="Aug-aN-ezb"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d0E-2V-CKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1379.5" y="-474.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Zj-7c-Mcw">
@@ -143,10 +175,10 @@
             </objects>
             <point key="canvasLocation" x="890.5" y="288.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Favourites-->
         <scene sceneID="aVs-jp-xMT">
             <objects>
-                <viewController id="vAg-6X-aHg" sceneMemberID="viewController">
+                <viewController id="vAg-6X-aHg" customClass="FavouritesViewController" customModule="FoodFinder_1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="x3o-cn-BId"/>
                         <viewControllerLayoutGuide type="bottom" id="vg1-5d-JvL"/>
@@ -156,13 +188,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gWx-ko-opR"/>
+                    <navigationItem key="navigationItem" title="Favourites" id="gWx-ko-opR"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dav-Jl-YDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674.5" y="1105.5"/>
+            <point key="canvasLocation" x="1391.5" y="1096.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="60Q-Jd-sXN">
@@ -179,6 +211,7 @@
                     <connections>
                         <segue destination="Ce9-A9-dkz" kind="relationship" relationship="viewControllers" id="ZML-zA-9kA"/>
                         <segue destination="nfJ-Hg-1Si" kind="relationship" relationship="viewControllers" id="kYt-ht-QUR"/>
+                        <segue destination="qvb-jK-bYw" kind="relationship" relationship="viewControllers" id="iAO-yp-wPT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SSg-Ik-jlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -204,7 +237,28 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQR-Sg-S2I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862" y="1105"/>
+            <point key="canvasLocation" x="890.5" y="1096.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hsg-Ud-QV8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qvb-jK-bYw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="FWi-5N-aqE"/>
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vOs-kJ-SXK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pI3-5g-HWx" kind="relationship" relationship="rootViewController" id="nIH-PR-gWM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xV-jC-4Ow" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890.5" y="-474.5"/>
         </scene>
     </scenes>
 </document>
