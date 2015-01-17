@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		351E88F71A6A9E2400BC149B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351E88F61A6A9E2400BC149B /* DetailViewController.swift */; };
 		35C082521A69827400935604 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C082511A69827400935604 /* AppDelegate.swift */; };
 		35C082541A69827400935604 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C082531A69827400935604 /* ViewController.swift */; };
 		35C082571A69827400935604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C082551A69827400935604 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		351E88F61A6A9E2400BC149B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		35C0824C1A69827400935604 /* FoodFinder_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodFinder_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C082501A69827400935604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35C082511A69827400935604 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				35C082511A69827400935604 /* AppDelegate.swift */,
 				35C082531A69827400935604 /* ViewController.swift */,
+				351E88F61A6A9E2400BC149B /* DetailViewController.swift */,
 				35C082551A69827400935604 /* Main.storyboard */,
 				35C082711A69841000935604 /* ContimentTableViewController.swift */,
 				35C082581A69827400935604 /* Images.xcassets */,
@@ -218,6 +221,7 @@
 				35C082721A69841000935604 /* ContimentTableViewController.swift in Sources */,
 				35C082541A69827400935604 /* ViewController.swift in Sources */,
 				35C082521A69827400935604 /* AppDelegate.swift in Sources */,
+				351E88F71A6A9E2400BC149B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				35C0826D1A69827400935604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35C0826E1A69827400935604 /* Build configuration list for PBXNativeTarget "FoodFinder_1Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				35C082701A69827400935604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
